@@ -87,7 +87,7 @@
     <div class="row-fluid">
         <div class="{{css_class}}">
             <header>
-            <h1 id="recent-posts">Recent Posts <a id="allposts" href="{{ SITEURL }}/archives.html">all posts</a></h1>
+            <h1 id="recent-posts">Weekly Meetings <a id="allposts" href="{{ SITEURL }}/archives.html">All Posts</a></h1>
             </header>
         <div class="recent-posts">
             {% for article in articles %}
@@ -101,6 +101,7 @@
                 <div class="recent-posts-time">
                 <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
                 </div>
+                <div class="recent-posts-summary">{{article.summary}}</div>
                 </section>
             </article>
             {% endif %}
