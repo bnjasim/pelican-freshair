@@ -174,7 +174,7 @@ article ol a,
 blockquote a,
 article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a {
     border-bottom: thin dashed #A9A9A9;
-    color: #000;
+    /*color: #000; my edit dec 25 2017 */ 
 }
 article p a:hover,
 article ol a:hover,
@@ -297,6 +297,10 @@ on 25-Dec-2017 */
 .navbar .brand {
     color: white !important;
     text-shadow: none !important;
+}
+
+.navbar-search {
+    margin-left: 10px;
 }
 
 .page-header {
