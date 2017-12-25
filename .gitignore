@@ -6,6 +6,7 @@
 .LSOverride
 Icon
 
+output/*
 
 # Thumbnails
 ._*
