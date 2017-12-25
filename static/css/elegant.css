@@ -174,7 +174,7 @@ article ol a,
 blockquote a,
 article div.article-content ul:not(.articles-timeline):not(.related-posts-list) a {
     border-bottom: thin dashed #A9A9A9;
-    /*color: #000; my edit dec 25 2017 */ 
+    /*color: #000; my edit dec 25 2017*/ 
 }
 article p a:hover,
 article ol a:hover,
@@ -393,8 +393,27 @@ ul.multi-parts-list li.active-part {
     font-style: italic;
 }
 .table-of-content .toc {
-    font-size: .7em;
+    font-size: .9em;
 }
+
+/* Only first level of content is displayed */
+.table-of-content .toc ul>li ul {
+    display: none;
+}
+
+.table-of-content .toc ul {
+    list-style-type: none;
+    margin-left: 2px;
+}
+
+.table-of-content .toc ul>li {
+    margin-bottom: 5px;
+    text-overflow: ellipsis;
+    /* Required for text-overflow to do anything */
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 .last-updated a {
     color: #333;
 }
