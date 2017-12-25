@@ -257,8 +257,10 @@ h1#recent-posts {
     font-size: inherit;
 }
 
+/* Added by Binu jasim 
+on 25-Dec-2017 */
 .article-content h1 {
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: normal;
 }
 
@@ -270,6 +272,26 @@ h1#recent-posts {
 .article-content h3 {
     font-size: 1.2em;
     font-weight: normal;
+}
+
+/* override bootstrap */
+.navbar-inner {
+    /* background-color: black; */
+    background-image: -moz-linear-gradient(top, #020202, #000000);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#020202), to(#000000));
+    background-image: -webkit-linear-gradient(top, #020202, #000000);
+    background-image: -o-linear-gradient(top, #020202, #000000);
+    background-image: linear-gradient(to bottom, #020202, #000000);
+}
+
+.navbar .nav a {
+    color: white !important;
+    text-shadow: none !important;
+}
+
+.navbar .brand {
+    color: white !important;
+    text-shadow: none !important;
 }
 
 .page-header {
