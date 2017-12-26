@@ -107,8 +107,10 @@
                 
                 </section>
 
-                <div class="article-content recent-posts-summary">{{article.summary}}</div>
+                <div class="article-content">{{article.summary}}</div>
                 
+                <a href="{{ SITEURL }}/{{ article.url }}" class="show-more"><div class="rectangle"> Read More </div></a>
+
             </article>
             {% endif %}
             {% endfor %}

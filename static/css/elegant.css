@@ -176,6 +176,24 @@ article div.article-content ul:not(.articles-timeline):not(.related-posts-list) 
     border-bottom: thin dashed #A9A9A9;
     /*color: #000; my edit dec 25 2017*/ 
 }
+
+.recent-posts  .rectangle {
+    width: 70px;
+    height: 20px;
+    border: 1px solid #ADD8E6;
+    padding: 5px 10px;
+}
+
+a.show-more {
+    display: inline-block;
+}
+
+a.show-more:hover {
+    text-decoration: none;
+    background-color: #ADD8E6;
+    color: white;
+}
+
 article p a:hover,
 article ol a:hover,
 article div.article-content ul:not(.articles-timeline) a:hover {
