@@ -519,7 +519,7 @@ div.blog-archives article.last-entry-of-year {
 div.blog-archives time, div.recent-posts time {
     text-align: left;
 }
-div.blog-archives time, div.recent-posts time, div.recent-posts section {
+div.blog-archives time, div.recent-posts time, .page-header time, div.recent-posts section {
     color: #8F8F8F;
     font: .9em 'PT Sans', 'Helvetica Neue', Arial, Sans-Serif;
 }
@@ -531,7 +531,7 @@ div.recent-posts section a:hover {
     border-bottom: 1px dashed;
     text-decoration: none;
 }
-div.recent-posts time {
+div.recent-posts time, .page-header time {
      font-size: inherit;
 }
 

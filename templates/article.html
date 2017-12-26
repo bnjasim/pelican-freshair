@@ -24,6 +24,9 @@
 <article>
 <div class="row-fluid">
     <header class="page-header span10 offset2">
+    <div>
+        <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+    </div>
     <h1>{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %}</h1>
     </header>
 </div>
