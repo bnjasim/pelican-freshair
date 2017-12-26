@@ -96,16 +96,19 @@
             <article>
                 <!-- <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %} </a> -->
                 <header class="page-header">
+                    <div>
+                        <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+                    </div>
                     <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }} {%if article.subtitle %} <small> {{ article.subtitle }} </small> {% endif %}</a></h1>
                 </header>
                 <section>
                 <!--    posted in
                 <a href="{{ SITEURL }}/categories.html#{{ article.category.slug }}-ref">{{ article.category }}</a> -->
-                <div class="recent-posts-time">
-                <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
-                </div>
-                <div class="recent-posts-summary">{{article.summary}}</div>
+                
                 </section>
+
+                <div class="article-content recent-posts-summary">{{article.summary}}</div>
+                
             </article>
             {% endif %}
             {% endfor %}

@@ -187,7 +187,7 @@ h1#recent-posts {
     line-height: 70px;
 }
 .article-content, div.recent-posts p {
-    font: 1.2em/1.6em 'PT Serif', Georgia, 'Times New Roman', Times, Serif;
+    font: 1.1em/1.6em 'PT Serif', Georgia, 'Times New Roman', Times, Serif;
     text-align: justify;
 }
 .article-content {
@@ -309,12 +309,14 @@ on 25-Dec-2017 */
     /* margin: 10px 10px 20px;
     padding: 5px; */
     border-bottom: 0px solid; /* override bootstrap */
-    margin-top: 40px;
-    margin-bottom: 10px;
+    margin-top: 35px;
+    margin-bottom: 0px;
+    padding-bottom: 1px;
 }
 .page-header h1 {
     font-size: 2.5em;
     font-weight: 600;
+    margin-top: 5px;
 }
 ul.articles-timeline {
     list-style: none;
@@ -499,14 +501,14 @@ div.blog-archives h2 {
     position: relative;
     margin:0;
 }
-div.blog-archives article, div.recent-posts article {
-    border-bottom: 1px dotted #AAA;
-}
+
 div.blog-archives article, div.recent-posts article {
     /* font-size: 1.1em;  edit on Dec 26 2017 */
     /* padding: .3em .2em; */
     position: relative;
     overflow: auto;
+    border-bottom: 1px dotted #AAA;
+    padding-bottom: 10px;
 }
 div.blog-archives article {
     margin-left: 6em;
@@ -515,8 +517,7 @@ div.blog-archives article.last-entry-of-year {
     margin-bottom: 1em;
 }
 div.blog-archives time, div.recent-posts time {
-    float: right;
-    text-align: right;
+    text-align: left;
 }
 div.blog-archives time, div.recent-posts time, div.recent-posts section {
     color: #8F8F8F;
@@ -533,14 +534,7 @@ div.recent-posts section a:hover {
 div.recent-posts time {
      font-size: inherit;
 }
-div.recent-posts-time {
-    display: inline;
-}
 
-/* .recent-posts-summary p {
-    font-style: italic !important; 
-    margin-top: 2px;
-} */
 
 @media (max-width: 767px) {
     div.blog-archives h2 {
@@ -552,9 +546,6 @@ div.recent-posts-time {
     }
     div.recent-posts time {
         float: none;
-    }
-    div.recent-posts-time {
-        display: block;
     }
     ul.list-articles-category li time {
         width: 100%;
